@@ -7,23 +7,31 @@
 .container {
   text-align: center;
   margin: 60px auto;
-  border: 3px solid red;
+  /* border: 3px solid red; */
   max-width: 500px;
 }
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(210, 238, 210);
+}
+
 img {
-  width: 30%;
+  width: 15%;
+}
+
+h1 {
+  margin-top: 24px;
+  font-weight: 700;
+}
+p {
+  font-family: "Roboto Mono", monospace;
+  margin-top: 5px;
 }
 
 ul {
   list-style: none;
   margin: 40px 0px;
-}
-
-h1 {
-  margin-top: 24px;
-}
-p {
-  margin-top: 8px;
+  font-weight: 400;
 }
 
 ul li a {
@@ -31,4 +39,26 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(248, 255, 32);
+  border-radius: 5px;
+  margin-bottom: 16px;
+  text-decoration: none;
+  color: black;
+  transition: 500ms;
+}
+
+ul li a:hover {
+  background-color: rgb(9, 164, 58);
+  color: white;
+}
+
+footer {
+  color: gray;
+  opacity: 0.4;
+  transition: 200ms;
+}
+footer:hover {
+  opacity: 1;
+  color: green;
+  text-decoration: underline;
 }
